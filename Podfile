@@ -7,6 +7,9 @@ target 'AstroApp' do
 
   # Pods for AstroApp
 pod 'Firebase/Core'
+pod 'FirebaseUI'
+pod 'Firebase/Auth'
+
 pod 'Alamofire'
 
   target 'AstroAppTests' do
