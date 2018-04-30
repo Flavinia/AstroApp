@@ -10,12 +10,16 @@
 		909FCFC90DD1423E608AD54F /* Pods_AstroAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89CC301B8E4E3BB6865BDE0 /* Pods_AstroAppTests.framework */; };
 		DB6453A3CC15CCE03CD4285D /* Pods_AstroApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FC1D8670531E510D1415D4 /* Pods_AstroApp.framework */; };
 		EE0D080D2095BFA90063B841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D080C2095BFA90063B841 /* AppDelegate.swift */; };
-		EE0D080F2095BFA90063B841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D080E2095BFA90063B841 /* ViewController.swift */; };
 		EE0D08122095BFA90063B841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D08102095BFA90063B841 /* Main.storyboard */; };
 		EE0D08152095BFA90063B841 /* AstroApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE0D08132095BFA90063B841 /* AstroApp.xcdatamodeld */; };
 		EE0D08172095BFA90063B841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0D08162095BFA90063B841 /* Assets.xcassets */; };
 		EE0D081A2095BFA90063B841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D08182095BFA90063B841 /* LaunchScreen.storyboard */; };
 		EE0D08252095BFA90063B841 /* AstroAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D08242095BFA90063B841 /* AstroAppTests.swift */; };
+		EE2B2688209730850094740B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE2B2687209730840094740B /* GoogleService-Info.plist */; };
+		EE2B268E20973F4B0094740B /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B268D20973F4B0094740B /* CustomNavController.swift */; };
+		EE2B2691209741A20094740B /* SyncWithServerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B2690209741A20094740B /* SyncWithServerVC.swift */; };
+		EE2B2696209745A30094740B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B2695209745A30094740B /* AppConstants.swift */; };
+		EEBA1D4E20962F3E007D7DFA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA1D4D20962F3E007D7DFA /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 		E89CC301B8E4E3BB6865BDE0 /* Pods_AstroAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstroAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D08092095BFA90063B841 /* AstroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D080C2095BFA90063B841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE0D080E2095BFA90063B841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE0D08112095BFA90063B841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE0D08142095BFA90063B841 /* AstroApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AstroApp.xcdatamodel; sourceTree = "<group>"; };
 		EE0D08162095BFA90063B841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +49,11 @@
 		EE0D08202095BFA90063B841 /* AstroAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D08242095BFA90063B841 /* AstroAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroAppTests.swift; sourceTree = "<group>"; };
 		EE0D08262095BFA90063B841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2B2687209730840094740B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE2B268D20973F4B0094740B /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+		EE2B2690209741A20094740B /* SyncWithServerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncWithServerVC.swift; sourceTree = "<group>"; };
+		EE2B2695209745A30094740B /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		EEBA1D4D20962F3E007D7DFA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +119,15 @@
 		EE0D080B2095BFA90063B841 /* AstroApp */ = {
 			isa = PBXGroup;
 			children = (
+				EE2B2692209745700094740B /* Classes */,
+				EE2B268920973EEE0094740B /* Custom Components */,
+				EEBA1D4B20962F0F007D7DFA /* Screens */,
 				EE0D080C2095BFA90063B841 /* AppDelegate.swift */,
-				EE0D080E2095BFA90063B841 /* ViewController.swift */,
 				EE0D08102095BFA90063B841 /* Main.storyboard */,
 				EE0D08162095BFA90063B841 /* Assets.xcassets */,
 				EE0D08182095BFA90063B841 /* LaunchScreen.storyboard */,
 				EE0D081B2095BFA90063B841 /* Info.plist */,
+				EE2B2687209730840094740B /* GoogleService-Info.plist */,
 				EE0D08132095BFA90063B841 /* AstroApp.xcdatamodeld */,
 			);
 			path = AstroApp;
@@ -129,6 +140,87 @@
 				EE0D08262095BFA90063B841 /* Info.plist */,
 			);
 			path = AstroAppTests;
+			sourceTree = "<group>";
+		};
+		EE2B268920973EEE0094740B /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B268C20973F180094740B /* Cells */,
+				EE2B268B20973F120094740B /* Views */,
+				EE2B268A20973EFE0094740B /* View Controllers */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+		EE2B268A20973EFE0094740B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B268D20973F4B0094740B /* CustomNavController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EE2B268B20973F120094740B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE2B268C20973F180094740B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EE2B268F209741620094740B /* SyncWithServerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B2690209741A20094740B /* SyncWithServerVC.swift */,
+			);
+			path = SyncWithServerScreen;
+			sourceTree = "<group>";
+		};
+		EE2B2692209745700094740B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B2694209745880094740B /* Constants */,
+				EE2B26932097457C0094740B /* Singletons */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EE2B26932097457C0094740B /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Singletons;
+			sourceTree = "<group>";
+		};
+		EE2B2694209745880094740B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B2695209745A30094740B /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EEBA1D4B20962F0F007D7DFA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B268F209741620094740B /* SyncWithServerScreen */,
+				EEBA1D4C20962F1B007D7DFA /* LoginScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EEBA1D4C20962F1B007D7DFA /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EEBA1D4D20962F3E007D7DFA /* LoginVC.swift */,
+			);
+			path = LoginScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE0D081A2095BFA90063B841 /* LaunchScreen.storyboard in Resources */,
+				EE2B2688209730850094740B /* GoogleService-Info.plist in Resources */,
 				EE0D08172095BFA90063B841 /* Assets.xcassets in Resources */,
 				EE0D08122095BFA90063B841 /* Main.storyboard in Resources */,
 			);
@@ -361,9 +454,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0D080F2095BFA90063B841 /* ViewController.swift in Sources */,
+				EE2B268E20973F4B0094740B /* CustomNavController.swift in Sources */,
+				EE2B2696209745A30094740B /* AppConstants.swift in Sources */,
+				EE2B2691209741A20094740B /* SyncWithServerVC.swift in Sources */,
 				EE0D080D2095BFA90063B841 /* AppDelegate.swift in Sources */,
 				EE0D08152095BFA90063B841 /* AstroApp.xcdatamodeld in Sources */,
+				EEBA1D4E20962F3E007D7DFA /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
