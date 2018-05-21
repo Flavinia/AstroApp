@@ -14,6 +14,7 @@ import FirebaseGoogleAuthUI
 import FirebaseFacebookAuthUI
 
 
+
 class CustomNavController: UINavigationController {
 
     let providers: [FUIAuthProvider] = [
@@ -101,3 +102,5 @@ extension CustomNavController:FUIAuthDelegate{
         return false
     }
 }
+
+

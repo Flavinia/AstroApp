@@ -11,6 +11,9 @@ pod 'FirebaseUI'
 pod 'Firebase/Auth'
 
 pod 'Alamofire'
+pod 'ObjectMapper'
+pod 'RxSwift',    '~> 4.0'
+pod 'RxCocoa',    '~> 4.0'
 
   target 'AstroAppTests' do
     inherit! :search_paths

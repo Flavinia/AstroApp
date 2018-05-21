@@ -9,11 +9,19 @@
 import UIKit
 import Firebase
 
+protocol TableViewModelDelegate : class {
+    func testsUpdated()
+}
+
+
 class SyncWithServerVC: UIViewController {
 
+    @IBOutlet weak var tbl: UITableView!
+    var tableViewModel = TestListTableViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableViewModel.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -24,12 +32,15 @@ class SyncWithServerVC: UIViewController {
     
 
     @IBAction func btnLogoutPressed(_ sender: Any) {
+        tableViewModel.getTestsForLevel(1)
+        /*
         do{
             try Auth.auth().signOut()
             
         }catch{
             print("Error while signing out!")
         }
+ */
     }
     /*
     // MARK: - Navigation
@@ -41,4 +52,33 @@ class SyncWithServerVC: UIViewController {
     }
     */
 
+}
+
+extension SyncWithServerVC:UITableViewDelegate{
+    
+}
+
+extension SyncWithServerVC:UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableViewModel.tests.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "testCell", for: indexPath) as? TestCell else {
+            return UITableViewCell()
+        }
+        let nameString = tableViewModel.tests[indexPath.row].name
+        cell.config(testName: nameString)
+        return cell
+    }
+    
+    
+}
+
+extension SyncWithServerVC:TableViewModelDelegate {
+    func testsUpdated() {
+        self.tbl.reloadData()
+    }
+    
+    
 }

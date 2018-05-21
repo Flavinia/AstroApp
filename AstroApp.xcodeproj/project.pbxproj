@@ -20,6 +20,12 @@
 		EE2B2691209741A20094740B /* SyncWithServerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B2690209741A20094740B /* SyncWithServerVC.swift */; };
 		EE2B2696209745A30094740B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B2695209745A30094740B /* AppConstants.swift */; };
 		EEBA1D4E20962F3E007D7DFA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA1D4D20962F3E007D7DFA /* LoginVC.swift */; };
+		EEEEEC3F20B1E3F800608447 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEEC3E20B1E3F800608447 /* DatabaseManager.swift */; };
+		EEEEEC4420B20B9E00608447 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEEC4320B20B9E00608447 /* Test.swift */; };
+		EEEEEC4620B20BAC00608447 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEEC4520B20BAC00608447 /* Question.swift */; };
+		EEEEEC4820B20BC100608447 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEEC4720B20BC100608447 /* Answer.swift */; };
+		EEEEEC4C20B21E5D00608447 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEEC4B20B21E5D00608447 /* TestCell.swift */; };
+		EEEEEC4E20B2206D00608447 /* TestListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEEC4D20B2206D00608447 /* TestListTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,12 @@
 		EE2B2690209741A20094740B /* SyncWithServerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncWithServerVC.swift; sourceTree = "<group>"; };
 		EE2B2695209745A30094740B /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		EEBA1D4D20962F3E007D7DFA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EEEEEC3E20B1E3F800608447 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		EEEEEC4320B20B9E00608447 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		EEEEEC4520B20BAC00608447 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EEEEEC4720B20BC100608447 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		EEEEEC4B20B21E5D00608447 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		EEEEEC4D20B2206D00608447 /* TestListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,7 @@
 		EE0D080B2095BFA90063B841 /* AstroApp */ = {
 			isa = PBXGroup;
 			children = (
+				EEEEEC4220B20B8700608447 /* Models */,
 				EE2B2692209745700094740B /* Classes */,
 				EE2B268920973EEE0094740B /* Custom Components */,
 				EEBA1D4B20962F0F007D7DFA /* Screens */,
@@ -170,6 +183,7 @@
 		EE2B268C20973F180094740B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				EEEEEC4B20B21E5D00608447 /* TestCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -178,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				EE2B2690209741A20094740B /* SyncWithServerVC.swift */,
+				EEEEEC4D20B2206D00608447 /* TestListTableViewModel.swift */,
 			);
 			path = SyncWithServerScreen;
 			sourceTree = "<group>";
@@ -194,6 +209,7 @@
 		EE2B26932097457C0094740B /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
+				EEEEEC3E20B1E3F800608447 /* DatabaseManager.swift */,
 			);
 			path = Singletons;
 			sourceTree = "<group>";
@@ -221,6 +237,16 @@
 				EEBA1D4D20962F3E007D7DFA /* LoginVC.swift */,
 			);
 			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		EEEEEC4220B20B8700608447 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEEEEC4320B20B9E00608447 /* Test.swift */,
+				EEEEEC4520B20BAC00608447 /* Question.swift */,
+				EEEEEC4720B20BC100608447 /* Answer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,7 +418,10 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
@@ -413,7 +442,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
@@ -454,12 +486,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEEEC4C20B21E5D00608447 /* TestCell.swift in Sources */,
 				EE2B268E20973F4B0094740B /* CustomNavController.swift in Sources */,
 				EE2B2696209745A30094740B /* AppConstants.swift in Sources */,
 				EE2B2691209741A20094740B /* SyncWithServerVC.swift in Sources */,
+				EEEEEC4620B20BAC00608447 /* Question.swift in Sources */,
 				EE0D080D2095BFA90063B841 /* AppDelegate.swift in Sources */,
 				EE0D08152095BFA90063B841 /* AstroApp.xcdatamodeld in Sources */,
+				EEEEEC4E20B2206D00608447 /* TestListTableViewModel.swift in Sources */,
+				EEEEEC4420B20B9E00608447 /* Test.swift in Sources */,
+				EEEEEC4820B20BC100608447 /* Answer.swift in Sources */,
 				EEBA1D4E20962F3E007D7DFA /* LoginVC.swift in Sources */,
+				EEEEEC3F20B1E3F800608447 /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
